@@ -248,11 +248,18 @@ svg { display: block; }
 }
 
 .content-section {
-  display: grid;
-  place-items: center;
-  min-height: 72vh;
-  padding: 100px 24px;
-  background: var(--cream);
+    display: grid;
+    place-items: center;
+    min-height: 72vh;
+    padding: 100px 24px;
+
+    background:
+        linear-gradient(rgba(249,245,240,0.72), rgba(249,245,240,0.72)),
+        url("remania-about.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .content-section:nth-of-type(3) { background: var(--cream-soft); }
