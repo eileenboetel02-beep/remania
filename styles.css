@@ -262,6 +262,16 @@ svg { display: block; }
     background-repeat: no-repeat;
 }
 
+.collection-section {
+    background:
+        linear-gradient(rgba(249,245,240,0.72), rgba(249,245,240,0.72)),
+        url("remania-collection.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .content-section:nth-of-type(3) { background: var(--cream-soft); }
 
 .section-inner {
