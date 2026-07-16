@@ -484,3 +484,108 @@ svg { display: block; }
 .footer-links a:hover {
     color: #a67c52;
 }
+/* Hochwertiger Remania-Footer */
+
+.luxury-footer {
+    display: block;
+    padding: 75px 30px 35px;
+    text-align: center;
+    color: #4b382f;
+    background: #eee0d2;
+}
+
+.footer-brand {
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(30px, 4vw, 44px);
+    font-weight: 400;
+    letter-spacing: 0.2em;
+}
+
+.footer-claim {
+    margin: 20px 0 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.7;
+    letter-spacing: 0.04em;
+    color: #705b50;
+}
+
+.footer-divider {
+    width: min(520px, 80%);
+    height: 1px;
+    margin: 38px auto;
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgba(166, 124, 82, 0.75),
+        transparent
+    );
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.footer-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #59453b;
+    text-decoration: none;
+    transition:
+        color 0.25s ease,
+        opacity 0.25s ease,
+        transform 0.25s ease;
+}
+
+.footer-links a:hover {
+    color: #a67c52;
+    transform: translateY(-2px);
+}
+
+.footer-instagram svg {
+    width: 17px;
+    height: 17px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.5;
+}
+
+.footer-copyright {
+    margin: 38px 0 0;
+    color: #846f63;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+@media (max-width: 650px) {
+    .luxury-footer {
+        padding: 60px 22px 30px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-logo {
+        letter-spacing: 0.14em;
+    }
+}
