@@ -465,3 +465,22 @@ svg { display: block; }
     transition-duration: 0.01ms !important;
   }
 }
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+    margin-top: 18px;
+}
+
+.footer-links a {
+    color: #6b5b50;
+    text-decoration: none;
+    letter-spacing: 0.08em;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #a67c52;
+}
