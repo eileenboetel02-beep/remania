@@ -604,3 +604,85 @@ svg { display: block; }
     }
 
 }
+
+/* Schrift und mobile Zentrierung reparieren */
+
+.hero,
+.hero-content,
+.hero h1,
+.hero-copy,
+.tagline,
+.ornament {
+    box-sizing: border-box;
+}
+
+.hero {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.hero-content {
+    width: min(680px, 100%);
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.hero-copy {
+    font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        padding-right: 0;
+        transform: none;
+    }
+
+    .hero h1 {
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: clamp(46px, 14vw, 66px);
+        letter-spacing: 0.07em;
+        line-height: 1;
+        white-space: nowrap;
+        text-align: center;
+        transform: none;
+    }
+
+    .ornament,
+    .tagline,
+    .hero-copy {
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        transform: none;
+    }
+
+    .hero-copy p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
