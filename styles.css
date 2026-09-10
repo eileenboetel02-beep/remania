@@ -1021,9 +1021,10 @@ svg { display: block; }
 /* EDELSTEINE */
 
 .gemstone-section {
+  .gemstone-section {
   padding: 130px 6vw;
-  background: #2f241f;
-  color: #f7efe6;
+  background: #f7efe6;
+  color: var(--brown);
 }
 
 .gemstone-inner {
