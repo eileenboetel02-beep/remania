@@ -1063,7 +1063,7 @@ svg { display: block; }
 .gemstone-section p {
   max-width: 620px;
   margin: 0 0 24px;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 1.9;
 }
 
@@ -1072,7 +1072,7 @@ svg { display: block; }
   padding-top: 28px;
   border-top: 1px solid var(--line);
   font-family: var(--serif);
-  font-size: clamp(21px, 2.2vw, 28px) !important;
+  font-size: clamp(23px, 2.4vw, 31px) !important;
   line-height: 1.4 !important;
   font-style: italic;
 }
