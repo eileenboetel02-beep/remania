@@ -967,9 +967,15 @@ svg { display: block; }
 /* PHILOSOPHIE */
 
 .philosophy-section {
+  position: relative;
   padding: 120px 6vw;
-  background: #efe0d1;
   color: var(--brown);
+  background:
+    linear-gradient(
+      rgba(247, 239, 230, 0.78),
+      rgba(247, 239, 230, 0.78)
+    ),
+    url("remania-philosophie.png") center center / cover no-repeat;
 }
 
 .philosophy-inner {
