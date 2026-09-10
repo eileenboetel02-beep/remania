@@ -821,3 +821,145 @@ svg { display: block; }
     padding: 26px 0;
   }
 }
+
+/* =========================
+   DIE AUSWAHL
+   ========================= */
+
+.selection-section {
+  padding: 130px 5vw 150px;
+  background: #f7efe6;
+  overflow: hidden;
+}
+
+.selection-section > .section-inner {
+  margin: 0 auto 85px;
+  text-align: center;
+}
+
+.selection-intro {
+  max-width: 600px !important;
+}
+
+/* Drei Bereiche */
+
+.selection-grid {
+  width: min(1320px, 100%);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(24px, 3vw, 55px);
+  align-items: start;
+}
+
+.selection-card {
+  min-width: 0;
+}
+
+/* Mittlere Karte bewusst tiefer */
+
+.selection-card:nth-child(2) {
+  margin-top: 85px;
+}
+
+.selection-image {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  margin-bottom: 30px;
+
+  background-color: #eadbcd;
+  background-size: cover;
+  background-position: center;
+
+  overflow: hidden;
+  transition: transform 700ms ease;
+}
+
+.selection-card:hover .selection-image {
+  transform: translateY(-6px);
+}
+
+/*
+  Hier setzen wir später deine echten Bilder ein.
+  Bis dahin entstehen bewusst ruhige Platzhalter.
+*/
+
+.selection-image-jewellery {
+  background:
+    linear-gradient(rgba(247,239,230,0.18), rgba(247,239,230,0.18)),
+    #dfcdbd;
+}
+
+.selection-image-antiques {
+  background:
+    linear-gradient(rgba(247,239,230,0.12), rgba(247,239,230,0.12)),
+    #d6c0ad;
+}
+
+.selection-image-design {
+  background:
+    linear-gradient(rgba(247,239,230,0.16), rgba(247,239,230,0.16)),
+    #e5d5c6;
+}
+
+/* Texte */
+
+.selection-text {
+  padding: 0 6px;
+}
+
+.selection-number {
+  margin: 0 0 13px;
+
+  color: var(--gold);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: 0.3em;
+}
+
+.selection-text h3 {
+  margin: 0 0 14px;
+
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(30px, 3vw, 43px);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.selection-text p:last-child {
+  margin: 0;
+
+  color: var(--brown-soft);
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+/* Handy */
+
+@media (max-width: 800px) {
+
+  .selection-section {
+    padding: 90px 22px 100px;
+  }
+
+  .selection-section > .section-inner {
+    margin-bottom: 55px;
+  }
+
+  .selection-grid {
+    grid-template-columns: 1fr;
+    gap: 65px;
+    max-width: 500px;
+  }
+
+  .selection-card:nth-child(2) {
+    margin-top: 0;
+  }
+
+  .selection-image {
+    aspect-ratio: 4 / 5;
+    margin-bottom: 24px;
+  }
+
+}
