@@ -686,3 +686,138 @@ svg { display: block; }
         margin-right: auto;
     }
 }
+
+/* =========================
+   LEGAL PAGES
+   Impressum & Datenschutz
+   ========================= */
+
+.legal-page {
+  margin: 0;
+  min-height: 100vh;
+  background: #f5f2ec;
+  color: #292721;
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+.legal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 7%;
+  border-bottom: 1px solid rgba(41, 39, 33, 0.14);
+}
+
+.legal-brand {
+  color: #292721;
+  text-decoration: none;
+  font-size: 1.15rem;
+  letter-spacing: 0.28em;
+  font-weight: 500;
+}
+
+.back-link {
+  color: #706b61;
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  transition: opacity 0.25s ease;
+}
+
+.back-link:hover {
+  opacity: 0.55;
+}
+
+.legal-content {
+  width: min(760px, 86%);
+  margin: 0 auto;
+  padding: 90px 0 110px;
+}
+
+.legal-content .eyebrow {
+  margin: 0 0 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 0.72rem;
+  color: #8a8479;
+}
+
+.legal-content h1 {
+  margin: 0 0 65px;
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  line-height: 0.95;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+.legal-section {
+  padding: 32px 0;
+  border-top: 1px solid rgba(41, 39, 33, 0.13);
+}
+
+.legal-section h2 {
+  margin: 0 0 18px;
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+
+.legal-section p {
+  margin: 0 0 15px;
+  max-width: 680px;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #514d45;
+}
+
+.legal-section p:last-child {
+  margin-bottom: 0;
+}
+
+.legal-section a {
+  color: #292721;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.legal-footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 28px;
+  padding: 30px 7%;
+  border-top: 1px solid rgba(41, 39, 33, 0.14);
+}
+
+.legal-footer a {
+  color: #706b61;
+  text-decoration: none;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+}
+
+.legal-footer a:hover {
+  color: #292721;
+}
+
+@media (max-width: 650px) {
+  .legal-header {
+    padding: 24px 6%;
+  }
+
+  .back-link {
+    font-size: 0.82rem;
+  }
+
+  .legal-content {
+    width: 88%;
+    padding: 65px 0 80px;
+  }
+
+  .legal-content h1 {
+    margin-bottom: 45px;
+  }
+
+  .legal-section {
+    padding: 26px 0;
+  }
+}
